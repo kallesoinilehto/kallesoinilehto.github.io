@@ -13,4 +13,5 @@
 <p>
   Minun nimeni on Kalle Soinilehto. Opiskelen tällä hetkellä OSAO:lla ohjelmistokehittäjäksi.
   Ohjelmointikielistä eniten olen käyttänyt Pythonia ja tavoitteenani olisi hallita kyseinen perusteellisesti tulevaisuudessa.
+  Opiskelun alla on myös C#. Olen tehnyt Godotin avulla 2D-peliä ja aloitan pian Unityn harjoittelun.
 </p>
