@@ -1,2 +1,12 @@
-<h1>Portfolio</h1>
-<h2>Kalle Soinilehto</h2>
+<head>
+  <style> 
+    body { 
+      background-color: black; 
+    }
+  </style>
+</head>
+
+<h1>Portfolioni</h1>
+
+<h2>Tietoa minusta</h2>
+<p>Minun nimeni on Kalle Soinilehto. Opiskelen tällä hetkellä OSAO:lla ohjelmistokehittäjäksi.</p>
