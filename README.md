@@ -11,7 +11,7 @@
 
 <h2>Tietoa minusta</h2>
 <p>
-  -Minun nimeni on Kalle Soinilehto. Opiskelen tällä hetkellä OSAO:lla ohjelmistokehittäjäksi.
+  -Minun nimeni on Kalle Soinilehto. Olen suorittanut lukion. Kirjotin fysiikan, pitkän matematiikan, kemian, englannin ja äidinkielen. Opiskelen tällä hetkellä OSAO:lla ohjelmistokehittäjäksi. 
 </p>
 <p>-Ohjelmointikielistä eniten olen käyttänyt Pythonia ja tavoitteenani olisi hallita kyseinen perusteellisesti tulevaisuudessa.</p>
 <p>  -Opiskelun alla on myös C#, josta on jo aiemmin kokemusta.</p>
