@@ -15,4 +15,4 @@
 </p>
 <p>-Ohjelmointikielistä eniten olen käyttänyt Pythonia ja tavoitteenani olisi hallita kyseinen perusteellisesti tulevaisuudessa.</p>
 <p>  -Opiskelun alla on myös C#, josta on jo aiemmin kokemusta.</p>
-<p>-Olen tehnyt Godotin avulla 2D-peliä ja aloitan pian Unityn harjoittelun.</p>
+<p>-Olen tehnyt 2D-peliä (Godot) ja 3D-peliä (Unity ja Unreal Engine).</p>
