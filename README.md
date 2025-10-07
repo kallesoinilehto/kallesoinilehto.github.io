@@ -8,7 +8,7 @@
     p {
       color: white;
       font-family: courier;
-      font-size: 200%;
+      font-size: 90%;
     }
     </style>
   </head>
