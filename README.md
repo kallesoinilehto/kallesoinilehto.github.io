@@ -6,9 +6,12 @@
       color: black;
       }
     p {
-      color: white;
+      color: black;
       font-family: courier;
       font-size: 90%;
+    }
+    h1 {
+      text-align: center
     }
     </style>
   </head>
