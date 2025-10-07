@@ -2,11 +2,11 @@
   <head>
     <style> 
     body { 
-      background-color: white; 
-      color: black;
+      background-color: black; 
+      color: white;
       }
     p {
-      color: black;
+      color: white;
       font-size: 90%;
     }
     h1 {
