@@ -15,7 +15,7 @@
     </style>
   </head>
   
-  <h1>Portfolioni</h1>
+  <h1>Portfolio</h1>
   
   <h3>Tietoa minusta</h3>
   <p>
