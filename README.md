@@ -12,6 +12,19 @@
     h1 {
       text-align: center
     }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     </style>
   </head>
   
