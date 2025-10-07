@@ -1,5 +1,10 @@
 <head>
   <style> 
+    p {
+      color: grey
+      font-family: verdana
+      font-size: 200%
+      }
     body { 
       background-color: black; 
       color: white;
