@@ -32,7 +32,6 @@
     <nav>
       <a href="index.html">Etusivu</a>
       <a href="about.html">Tietoa</a>
-      <a href="contact.html">Yhteystiedot</a>
     </nav>
 
       <h1>Portfolio</h1>
