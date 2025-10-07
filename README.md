@@ -2,7 +2,7 @@
   <style> 
     p {
       color: grey
-      font-family: verdana
+      font-family: courier
       font-size: 200%
       }
     body { 
