@@ -17,7 +17,7 @@
   
   <h1>Portfolioni</h1>
   
-  <h2>Tietoa minusta</h2>
+  <h3>Tietoa minusta</h3>
   <p>
     Terve! Opiskelen tällä hetkellä ohjelmistokehittäjäksi. Valmistuin Madetojan musiikkilukiosta kirjoitusaineinani fysiikka, pitkä matematiikka, kemia, englanti ja äidinkieli.
   <p/>
@@ -27,8 +27,8 @@
     Lisäksi minut tunnetaan muusikkona ja Kiimeli-YouTube-kanavan alkuperäisenä jäsenenä. Olen rock-yhtye Back To Sanityn laulaja-kitaristi ja perustajajäsen. Olen toiminut myös kyseisen projektin tuottajana hoitaen äänitykset ja miksauksen. Olen soittanut rumpuja useissa yhtyeissä, kuten metallibändit Valkeinen ja Arkkienkeli, sekä soittanut yksittäisiä keikkoja yhtyeissä The Deborah Jones Band, Totuus ja Necestor.
   </p>
 
- <h2>Kokemukseni pelialalta</h2>
+ <h3>Kokemukseni pelialalta</h3>
  <p>Olen tutustunut kolmeen eri game engineen: Godot, Unity ja Unreal Engine, sekä tehnyt mobiilipeliä hyödyntäen pygamea. Sanoisin Unity:n olevan itselläni parhaiten hallussa, sillä peliprojektissa ehdin tutustua sen eri ominaisuuksiin. Olen työskennellyt sekä tasosuunnittelijana, että ohjelmointitehtävissä. Vahvuuteni pelialalla ovat selkeästi tason blockout ja yksinkertaiset scriptit. Github projektinhallinta alkaa olla myös vähitellen hallussa ryhmätöiden kautta.</p>
 
- <h2>Tavoitteeni ohjelmistokehittäjänä</h2>
+ <h3>Tavoitteeni ohjelmistokehittäjänä</h3>
 <p>Tavoitteeni on kirjoittaa koodia, joka on mahdollisimman selkeää ja yksinkertaista. Hyödynnän tekoälyn antamia mahdollisuuksia, joita hion ja täydennän lopputuotetta varten. Haluan, että sovelluksissani on mahdollisimman vähän bugeja, ja kaikkea turhaa tulisi välttää sekä taloudellisista että toiminnallisista syistä. Minun pääprojektini tällä hetkellä on juuri tämä kyseinen nettisivu. Haluan tuoda sivulle jotain interaktiivisuutta ja erillisiä artikkeleja, sekä kehittää visuaalista ilmettä esteettiseen suuntaan. Kun mietin tulevaisuuttani tällä alalla, haluaisin erikoistua tekemään verkkosivuja.</p>
