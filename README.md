@@ -27,8 +27,16 @@
     Lisäksi minut tunnetaan muusikkona ja Kiimeli-YouTube-kanavan alkuperäisenä jäsenenä. Olen rock-yhtye Back To Sanityn laulaja-kitaristi ja perustajajäsen. Olen toiminut myös kyseisen projektin tuottajana hoitaen äänitykset ja miksauksen. Olen soittanut rumpuja useissa yhtyeissä, kuten metallibändit Valkeinen ja Arkkienkeli, sekä soittanut yksittäisiä keikkoja yhtyeissä The Deborah Jones Band, Totuus ja Necestor.
   </p>
 
+  <p>
+    
+  </p>
+
  <h1>Kokemukseni pelialalta</h1>
  <p>Olen tutustunut kolmeen eri game engineen: Godot, Unity ja Unreal Engine, sekä tehnyt mobiilipeliä hyödyntäen pygamea. Sanoisin Unity:n olevan itselläni parhaiten hallussa, sillä peliprojektissa ehdin tutustua sen eri ominaisuuksiin. Olen työskennellyt sekä tasosuunnittelijana, että ohjelmointitehtävissä. Vahvuuteni pelialalla ovat selkeästi tason blockout ja yksinkertaiset scriptit.</p>
+
+<p>
+  
+</p>
 
  <h1>Tavoitteeni ohjelmistokehittäjänä</h1>
 <p>Tavoitteeni on kirjoittaa koodia, joka on mahdollisimman selkeää ja yksinkertaista. Hyödynnän tekoälyn antamia mahdollisuuksia, joita hion ja täydennän lopputuotetta varten. Haluan, että sovelluksissani on mahdollisimman vähän bugeja, ja kaikkea turhaa tulisi välttää sekä taloudellisista että toiminnallisista syistä. Minun pääprojektini tällä hetkellä on juuri tämä kyseinen nettisivu. Haluan tuoda sivulle jotain interaktiivisuutta ja erillisiä artikkeleja, sekä kehittää visuaalista ilmettä esteettiseen suuntaan. </p>
