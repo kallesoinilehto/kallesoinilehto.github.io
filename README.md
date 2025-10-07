@@ -7,7 +7,6 @@
       }
     p {
       color: black;
-      font-family: courier;
       font-size: 90%;
     }
     h1 {
