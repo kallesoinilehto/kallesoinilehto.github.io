@@ -27,8 +27,15 @@
     }
     </style>
   </head>
-  
-  <h1>Portfolio</h1>
+
+  <body>
+    <nav>
+      <a href="index.html">Etusivu</a>
+      <a href="about.html">Tietoa</a>
+      <a href="contact.html">Yhteystiedot</a>
+    </nav>
+
+      <h1>Portfolio</h1>
   
   <h3>Tietoa minusta</h3>
   <p>
@@ -45,3 +52,4 @@
 
  <h3>Tavoitteeni ohjelmistokehittäjänä</h3>
 <p>Tavoitteeni on kirjoittaa koodia, joka on mahdollisimman selkeää ja yksinkertaista. Hyödynnän tekoälyn antamia mahdollisuuksia, joita hion ja täydennän lopputuotetta varten. Haluan, että sovelluksissani on mahdollisimman vähän bugeja, ja kaikkea turhaa tulisi välttää sekä taloudellisista että toiminnallisista syistä. Minun pääprojektini tällä hetkellä on tämä kyseinen nettisivu. Haluan tuoda sivulle jotain interaktiivisuutta ja erillisiä artikkeleja, sekä kehittää visuaalista ilmettä esteettiseen suuntaan. Kun mietin tulevaisuuttani tällä alalla, haluaisin erikoistua tekemään juuri verkkosivuja.</p>
+  </body>
