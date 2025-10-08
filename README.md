@@ -34,9 +34,9 @@
       <a href="about.html">Tietoa</a>
     </nav>
 
-      <h1>Tietoa minusta</h1>
+      <h1>Tervetuloa verkkosivuilleni! / Welcome to my website!</h1>
   
   <p>
-    Tervetuloa verkkosivuilleni! Täältä löydät tietoa minusta ja projekteistani.
+    Täältä löydät tietoa projekteistani.
   </p>
-  <p> Welcome to my website! Here you'll find information about me and my projects.</p>
+  <p>Here you'll find information about my projects.</p>
