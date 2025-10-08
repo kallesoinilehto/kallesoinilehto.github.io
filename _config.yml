@@ -1,4 +1,4 @@
-theme: jekyll-theme-midnight;
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-title: Kalle Soinilehto;
-description: Tämä sivu on kehitysvaiheessa!;
+theme: jekyll-theme-midnight
+<link: rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+title: Kalle Soinilehto
+description: Tämä sivu on kehitysvaiheessa!
