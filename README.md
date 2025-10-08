@@ -9,7 +9,7 @@
       color: white;
       font-size: 90%;
     }
-    h1 {
+    h2 {
       text-align: center
     }
     nav {
@@ -34,7 +34,7 @@
       <a href="about.html">Tietoa</a>
     </nav>
 
-      <h1>Tervetuloa verkkosivuilleni! / Welcome to my website!</h1>
+      <h2>Tervetuloa verkkosivuilleni! / Welcome to my website!</h2>
   <br>
   <p>
     Täältä löydät tietoa projekteistani.
