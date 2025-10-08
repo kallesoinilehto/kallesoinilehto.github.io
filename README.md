@@ -33,7 +33,7 @@
       <a href="index.html">Etusivu</a>
       <a href="about.html">Tietoa</a>
     </nav>
-
+<br>
       <h2>Tervetuloa verkkosivuilleni! / Welcome to my website!</h2>
   <br>
   <p>
