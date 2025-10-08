@@ -1,5 +1,6 @@
 <html>  
   <head>
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     <style> 
     body { 
       background-color: black; 
