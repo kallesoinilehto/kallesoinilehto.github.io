@@ -1,3 +1,4 @@
 theme: jekyll-theme-midnight
 title: Kalle Soinilehto
 description: Tämä sivu on kehitysvaiheessa!
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
