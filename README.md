@@ -35,7 +35,7 @@
     </nav>
 
       <h1>Tervetuloa verkkosivuilleni! / Welcome to my website!</h1>
-  
+  <br>
   <p>
     Täältä löydät tietoa projekteistani.
   </p>
