@@ -32,6 +32,7 @@
     <nav>
       <a href="index.html">Etusivu</a>
       <a href="about.html">Tietoa</a>
+      <a href="games.html">Videopelit</a>
     </nav>
  <h2>Kokemukseni pelialalta</h2>
  <p>Olen tutustunut kolmeen eri game engineen: Godot, Unity ja Unreal Engine, sekä tehnyt mobiilipeliä hyödyntäen pygamea. Sanoisin Unity:n olevan itselläni parhaiten hallussa, sillä peliprojektissa ehdin tutustua sen eri ominaisuuksiin. Olen työskennellyt sekä tasosuunnittelijana, että ohjelmointitehtävissä. Vahvuuteni pelialalla ovat selkeästi tason blockout ja yksinkertaiset scriptit. Github projektinhallinta alkaa olla myös vähitellen hallussa ryhmätöiden kautta.</p>
