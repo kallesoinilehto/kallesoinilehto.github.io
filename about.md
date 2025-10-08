@@ -11,6 +11,7 @@
     }
     h2 {
       text-align: center
+      color: gray
     }
     nav {
       background-color: #333;
