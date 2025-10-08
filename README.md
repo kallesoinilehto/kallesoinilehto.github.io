@@ -34,9 +34,8 @@
       <a href="about.html">Tietoa</a>
     </nav>
 
-      <h1>Portfolio</h1>
+      <h1>Tietoa minusta</h1>
   
-  <h3>Tietoa minusta</h3>
   <p>
     Terve! Opiskelen tällä hetkellä ohjelmistokehittäjäksi. Valmistuin Madetojan musiikkilukiosta kirjoitusaineinani fysiikka, pitkä matematiikka, kemia, englanti ja äidinkieli. Olen opiskellut useita ohjelmointikieliä mm. python ja C#. Minulla on takana lukuisia peliprojekteja, joista yksi oli 2D-peli (Godot) ja kaksi 3D-peliä (Unity ja Unreal Engine). Olen 3d-mallintanut Rhinolla figuurin ja saanut sen onnistuneesti 3d-tulostettua. Sen lisäksi kokemusta löytyy myös media-alalta; hallitsen kuvakäsikirjoitukset, videoeditoinnin, valokuvauksen, äänityksen, haastattelun ja kuvanmuokkauksen. Harrastan musiikkia, jonka ohessa olen oppinut miksaamaan ja tekemään konerumpuja. Tietokoneella työskentely on siis tullut erittäin tutuksi.
   </p>
