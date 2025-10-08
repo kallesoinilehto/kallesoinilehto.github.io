@@ -33,7 +33,7 @@
       <a href="index.html">Etusivu</a>
       <a href="about.html">Tietoa</a>
     </nav>
-
+<br>
       <h1>Tietoa minusta / Info about me</h1>
   <br>
   <p>
