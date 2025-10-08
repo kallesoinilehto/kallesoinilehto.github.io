@@ -9,7 +9,7 @@
       color: white;
       font-size: 90%;
     }
-    h1 {
+    h2 {
       text-align: center
     }
     nav {
@@ -34,7 +34,7 @@
       <a href="about.html">Tietoa</a>
     </nav>
 <br>
-      <h1>Tietoa minusta / Info about me</h1>
+      <h2>Tietoa minusta / Info about me</h2>
   <br>
   <p>
     Terve! Opiskelen tällä hetkellä ohjelmistokehittäjäksi. Valmistuin Madetojan musiikkilukiosta kirjoitusaineinani fysiikka, pitkä matematiikka, kemia, englanti ja äidinkieli. Olen opiskellut muutamia ohjelmointikieliä mm. python ja C#. Minulla on takana useita peliprojekteja, joista yksi oli 2D-peli (Godot) ja kaksi 3D-peliä (Unity ja Unreal Engine). Olen 3d-mallintanut Rhinolla figuurin ja saanut sen onnistuneesti 3d-tulostettua. Sen lisäksi kokemusta löytyy myös media-alalta; hallitsen kuvakäsikirjoitukset, videoeditoinnin, valokuvauksen, äänityksen, haastattelun ja kuvanmuokkauksen. Haluan mainita myös musiikin, joka on tärkein harrastukseni. Kyseisen harrastyjsen ohessa olen oppinut miksaamaan ja tekemään konerumpuja. Tietokoneella työskentely on siis tullut erittäin tutuksi.
