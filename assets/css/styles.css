@@ -27,6 +27,7 @@ h3{
 nav {
   background-color: #edeae6;
   padding: 20px;
+  border-bottom: 2px solid #333;
   }
 nav a {
   font-family:helvetica;
