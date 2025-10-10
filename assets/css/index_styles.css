@@ -18,7 +18,7 @@ h1 {
 nav {
   background-color: #edeae6;
   padding: 20px;
-  border-bottom: 4px #333;
+  border-bottom: 4px solid black;
 }
 nav a {
   font-family: helvetica;
