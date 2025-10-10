@@ -2,3 +2,39 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+html {
+  height:100%;
+}
+body { 
+  margin:0;
+  background-color: white; 
+  color: black;
+  }
+p {
+  font-size:120%;
+  text-align:left;
+  font-family:helvetica;
+}
+h2 {
+  text-align: center;
+  font-family:helvetica;
+}
+h3{
+  font-size:130%;
+  font-family:helvetica;
+  text-align:center;
+}
+nav {
+  background-color: #333;
+  padding: 20px;
+  }
+nav a {
+  font-family:helvetica;
+  color: white;
+  margin-left: 50px;
+  text-decoration: none;
+  font-weight: bold;
+ }
+nav a:hover {
+  text-decoration: underline;
+}
