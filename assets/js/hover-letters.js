@@ -7,7 +7,7 @@ const span = (text, index) => {
 
 const byLetter = text => [...text].map(span);
 
-const {matches:motionOK} = window.matchMedia('(prefers-reduced-motion:no-preference)');
+// const {matches:motionOK} = window.matchMedia('(prefers-reduced-motion:no-preference)');
 
 if (motionOK) {
   const splitTargets = document.querySelectorAll('[split-by]');
