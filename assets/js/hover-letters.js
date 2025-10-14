@@ -12,10 +12,10 @@ const {matches:motionOK} = window.matchMedia('(prefers-reduced-motion:no-prefere
 if (motionOK) {
   const splitTargets = document.querySelectorAll('[split-by]');
   splitTargets.forEach(node => {
-    let nodes = byLetter(node.textContent);
-    if (nodes) {
-      node.textContent = ''; // Clear existing content
-      node.forEach(spanNode => node.appendChild(spanNode));
-    }
+    const chars = node.textContent.split('');
+    node.textContent = '';
+    chars.forEach((char, i) => {
+      node.appendChild(span(char, i));
+    });
   });
 }
