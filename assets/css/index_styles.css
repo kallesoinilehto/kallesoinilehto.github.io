@@ -6,25 +6,34 @@
 html {
   height:100%;
 }
+
 body { 
   margin:0;
   background-color: #edeae6; 
   color: #333;
 }
-h1 {
-  text-align: center;
-  font-family:helvetica;
-}
+
 p {
-  text-align: center;
+  font-size:120%;
+  text-align:left;
   font-family:helvetica;
-  font-size: 120%;
 }
+
+h1 {
+  text-align:center;
+  font-family:helvetica;
+}
+
+h2 {
+  text-align:center;
+  font-family:helvetica;
+
 nav {
   background-color: #edeae6;
   padding: 20px;
   border-bottom: 2px solid #333;
 }
+
 nav a {
   font-family: helvetica;
   color: #333;
@@ -32,6 +41,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+
 nav a:hover {
   text-decoration: underline;
 }
