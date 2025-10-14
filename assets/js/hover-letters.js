@@ -18,7 +18,7 @@ if (motionOK) {
   const splitTargets = document.querySelectorAll('[split-by]')
 
   splitTargets.forEach(node => {
-    let nodes = byLetter(node.textContent);
+    let nodes = byLetter(node.innerText);
 
     if (nodes length && node.firstChild.nodeType === Node.TEXT_NODE) {
       node.firstChild.replaceWith(...nodes);
