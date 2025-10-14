@@ -21,6 +21,6 @@ if (motionOK) {
     let nodes = byLetter(node.textContent);
 
     if (nodes)
-      node.firstChild.replaceWith(...nodes)
+      node.firstChild.replaceWith(...nodes);
   })
 }
