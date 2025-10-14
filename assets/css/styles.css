@@ -20,12 +20,12 @@ p {
 }
 
 h1 {
-  text-align: center;
+  text-align:center;
   font-family:helvetica;
 }
 
 h2 {
-  text-align: center;
+  text-align:center;
   font-family:helvetica;
 }
 
@@ -39,12 +39,14 @@ nav {
   background-color: #edeae6;
   padding: 20px;
   border-bottom: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 nav a {
   font-family:helvetica;
   color: #333;
-  margin-left: 50px;
   text-decoration: none;
   font-weight: bold;
 }
