@@ -1,26 +1,21 @@
 const span = (text, index) => {
-  const node = document.createElement('span')
+  const node = document.createElement('span');
+  node.textContent = text;
+  node.style.setProperty('--index', index);
+  return node;
+};
 
-  node.textContent = text
-  node.style.setProperty('--index', index)
+const byLetter = text => [...text].map(span);
 
-  return node
-}
-
-const byLetter = text =>
-  [...text].map(span)
-
-const {matches:motionOK} = window.matchMedia(
-  '(prefers-reduced-motion:no-preference)'
-  )
+const {matches:motionOK} = window.matchMedia('(prefers-reduced-motion:no-preference)');
 
 if (motionOK) {
-  const splitTargets = document.querySelectorAll('[split-by]')
-
+  const splitTargets = document.querySelectorAll('[split-by]');
   splitTargets.forEach(node => {
-    let nodes = byLetter(node.innerText);
-
+    let nodes = byLetter(node.textContent);
     if (nodes) {
-      node.firstChild.replaceWith(...nodes);
-  })
+      node.textContent = ''; // Clear existing content
+      node.forEach(spanNode => node.appendChild(spanNode));
+    }
+  });
 }
