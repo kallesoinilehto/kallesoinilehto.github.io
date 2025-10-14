@@ -1,3 +1,8 @@
+@media (prefers-reduced-motion:no-preference) {
+[letter-animation=hover]:hover>span {
+  transform: scale(.75);
+}
+
 [letter-animation=hover] > span:hover {
   transform: scale(1.25);
   }
