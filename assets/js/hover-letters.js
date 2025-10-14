@@ -20,7 +20,7 @@ if (motionOK) {
   splitTargets.forEach(node => {
     let nodes = byLetter(node.textContent);
 
-    if (nodes)
+    if (nodes length && node.firstChild.nodeType === Node.TEXT_NODE) {
       node.firstChild.replaceWith(...nodes);
   })
 }
