@@ -22,7 +22,6 @@ body {
 }
 
 p {
-  font-size:120%;
   text-align:left;
   font-family:helvetica;
 }
@@ -38,7 +37,6 @@ h2 {
 }
 
 h3{
-  font-size:130%;
   font-family:helvetica;
   text-align:center;
 }
