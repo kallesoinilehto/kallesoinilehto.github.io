@@ -10,7 +10,7 @@ function rand(min, max) {
 for (let i = 0; i < particleCount; i++) {
   const p = document.createElement('div');
   p.className = 'particle';
-  const size = rand(10, 30);
+  const size = rand(10, 20);
   p.style.width = `${size}px`;
   p.style.height = `${size}px`;
   p.style.background = `hsl(${rand(0,360)},70%,50%)`;
