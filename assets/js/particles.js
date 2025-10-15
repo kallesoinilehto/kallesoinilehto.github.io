@@ -1,4 +1,4 @@
-const particleCount = 30;
+const particleCount = 40;
 const container = document.getElementById('particle-container');
 const nav = document.querySelector('nav');
 const navHeight = nav.offsetHeight;
