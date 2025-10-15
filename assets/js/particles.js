@@ -36,8 +36,8 @@ function animateParticles() {
     if (left < 0 || left > vw) p.dataset.dx *= -1;
     if (top < 0 || top > vh) p.dataset.dy *= -1;
 
-    p.style.left = `$(left)px`;
-    p.style.top = `$(top)px`;
+    p.style.left = `${left}px`;
+    p.style.top = `${top}px`;
   });
   requestAnimationFrame(animateParticles);
 }
