@@ -25,8 +25,8 @@ for (let i = 0; i < particleCount; i++) {
   p.style.opacity = rand(0.4, 1);
   p.style.left = `${rand(0, vw)}px`;
   p.style.top = `${rand(navHeight, vh)}px`;
-  p.dataset.dx = rand(-1, 1);
-  p.dataset.dy = rand(-1, 1);
+  p.dataset.dx = rand(-0.5, 0.5);
+  p.dataset.dy = rand(-0.5, 0.5);
   container.appendChild(p);
 }
 
