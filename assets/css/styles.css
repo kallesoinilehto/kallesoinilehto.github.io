@@ -63,3 +63,8 @@ nav a {
 nav a:hover {
   font-size: 120%;
 }
+
+nav a.nav-home { color: #0074D9; }
+nav a.nav-info { color: #2ECC40; }
+nav a.nav-games { color: #FF4136; }
+nav a.nav-bg { color: #ab0bd4; }
