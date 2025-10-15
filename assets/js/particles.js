@@ -22,3 +22,24 @@ for (let i = 0; i < particleCount; i++) {
   container.appendChild(p);
 }
 
+function animateParticles() {
+  const particles = document.querySelectorAll('.particle');
+  particles.forEach(p => {
+    let left = parseFloat(p.style.left);
+    let top = parseFloat(p.style.top);
+    let dx = parseFloat(p.dataset.dx);
+    let dy = parseFloat(p.dataset.dy);
+
+    left += dx;
+    top += dy;
+
+    if (left < 0 || left > vw) p.dataset.dx *= -1;
+    if (top < 0 || top > vh) p.dataset.dy *= -1;
+
+    p.style.left = `$(left)px`;
+    p.style.top = `$(top)px`;
+  });
+  requestAnimationFrame(animateParticles);
+}
+
+animateParticles();
