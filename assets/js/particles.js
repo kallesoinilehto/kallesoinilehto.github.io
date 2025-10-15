@@ -1,5 +1,7 @@
 const particleCount = 30;
 const container = document.getElementById('particle-container');
+const nav = document.querySelector('nav');
+const navHeight = nav.offsetHeight;
 const vw = window.innerWidth;
 const vh = window.innerHeight;
 
@@ -16,7 +18,7 @@ for (let i = 0; i < particleCount; i++) {
   p.style.background = `hsl(${rand(0,360)},70%,50%)`;
   p.style.opacity = rand(0.4, 1);
   p.style.left = `${rand(0, vw)}px`;
-  p.style.top = `${rand(0, vh)}px`;
+  p.style.top = `${rand(navHeight, vh)}px`;
   p.dataset.dx = rand(-0.5, 0.5);
   p.dataset.dy = rand(-0.5, 0.5);
   container.appendChild(p);
@@ -34,7 +36,7 @@ function animateParticles() {
     top += dy;
 
     if (left < 0 || left > vw) p.dataset.dx *= -1;
-    if (top < 0 || top > vh) p.dataset.dy *= -1;
+    if (top < navHeight || top > vh) p.dataset.dy *= -1;
 
     p.style.left = `${left}px`;
     p.style.top = `${top}px`;
