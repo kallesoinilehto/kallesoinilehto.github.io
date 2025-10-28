@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function animateParticles() {
     const particles = document.querySelectorAll('.particle');
     const repelRadius = 80;
-    const repelStrength = 1.6;
+    const repelStrength = 0.8;
     const positionLerp = 0.08;
     const velocityDecay = 0.85;
     const maxSpeed = 4;
