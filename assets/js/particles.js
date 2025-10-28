@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const repelRadius = 80;
     const repelStrength = 1.6;
     const positionLerp = 0.08;
-    const velocityDecay = 0.92;
+    const velocityDecay = 0.85;
     const maxSpeed = 4;
 
     particles.forEach(p => {
