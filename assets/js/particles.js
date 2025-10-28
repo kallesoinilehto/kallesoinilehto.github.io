@@ -1,9 +1,9 @@
 const particleCount = 40;
 const container = document.getElementById('particle-container');
 const nav = document.querySelector('nav');
-const navHeight = nav.offsetHeight;
-const vw = window.innerWidth;
-const vh = window.innerHeight;
+let navHeight = nav.offsetHeight;
+let vw = window.innerWidth;
+let vh = window.innerHeight;
 
 function rand(min, max) {
   return Math.random() * (max - min) + min;
@@ -52,7 +52,7 @@ function animateParticles() {
   const particles = document.querySelectorAll('.particle');
   const repelRadius = 80;
   const repelStrength = 1.6;
-  const returnFactor = 0.08;
+  const positionLerp = 0.08;   // how fast position lerps back to home
   const velocityDecay = 0.92;
   const maxSpeed = 4;
   
@@ -94,7 +94,7 @@ function animateParticles() {
     const particleWidth = parseFloat(p.style.width);
     const particleHeight = parseFloat(p.style.height);
 
-     if (left < 0) {
+    if (left < 0) {
       left = 0;
       dx *= -1;
     } else if (left + particleWidth > vw) {
