@@ -42,12 +42,16 @@ h3{
 }
 
 nav {
+  width: 100%;
+  box-sizing: border-box;
   background-color: white;
   padding: 20px;
   border-bottom: 2px solid #a6a6a4;
   display: flex;
   justify-content: center;
   gap: 50px;
+  left: 0;
+  right: 0;
 }
 
 nav a {
