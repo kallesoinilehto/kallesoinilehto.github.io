@@ -77,10 +77,14 @@ nav a.nav-media { color: #333; }
 nav a.nav-media:hover { color: #fcff5c; }
 
 #particle-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: calc(100vh);
+  height: 100vh;
   overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .particle {
@@ -88,4 +92,9 @@ nav a.nav-media:hover { color: #fcff5c; }
   border-radius: 50%;
   will-change: transform, opacity;
   pointer-events: none;
+}
+
+nav, .content {
+  position: relative;
+  z-index: 1;
 }
