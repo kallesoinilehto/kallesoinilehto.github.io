@@ -25,8 +25,15 @@ for (let i = 0; i < particleCount; i++) {
   p.style.opacity = rand(0.4, 1);
   p.style.left = `${rand(0, vw)}px`;
   p.style.top = `${rand(navHeight, vh)}px`;
+
+  const initDx = rand(-0.5, 0.5);
+  const initDy = rand(-0.5, 0.5);
   p.dataset.dx = rand(-0.5, 0.5);
   p.dataset.dy = rand(-0.5, 0.5);
+
+  p.dataset.origDx = initDx;
+  p.dataset.origDy = initDy;
+  
   container.appendChild(p);
 }
 
@@ -34,6 +41,8 @@ function animateParticles() {
   const particles = document.querySelectorAll('.particle');
   const repelRadius = 80;
   const repelStrength = 1.2;
+  const returnFactor = 0.06;
+  const maxSpeed = 2;
   
   particles.forEach(p => {
     let left = parseFloat(p.style.left);
@@ -41,17 +50,25 @@ function animateParticles() {
     let dx = parseFloat(p.dataset.dx);
     let dy = parseFloat(p.dataset.dy);
 
-    const distX = left + parseFloat(p.style.width) / 2 - mouse.x;
-    const distY = top + parseFloat(p.style.height) / 2 - mouse.y;
+    const centerX = left + parseFloat(p.style.width) / 2;
+    const centerY = top + parseFloat(p.style.height) / 2;
+    const distX = centerX - mouse.x;
+    const distY = centerY - mouse.y;
     const dist = Math.sqrt(distX * distX + distY * distY);
 
     if (dist < repelRadius) {
       const angle = Math.atan2(distY, distX);
       dx += Math.cos(angle) * repelStrength;
       dy += Math.sin(angle) * repelStrength;
+
+      p.dataset.lastRepel = performance.now();
+    } else {
+      const origDx = parseFloat(p.dataset.origDx);
+      const origDy = parseFloat(p.dataset.origDy);
+      dx += (origDx - dx) * returnFactor;
+      dy += (origDy - dy) * returnFactor;
     }
 
-    const maxSpeed = 2;
     dx = Math.max(-maxSpeed, Math.min(maxSpeed, dx));
     dy = Math.max(-maxSpeed, Math.min(maxSpeed, dy));
 
