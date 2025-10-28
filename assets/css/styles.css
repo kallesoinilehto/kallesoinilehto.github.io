@@ -69,6 +69,8 @@ nav a.nav-games { color: #333; }
 nav a.nav-games:hover { color: #FF4136; }
 nav a.nav-bg { color: #333; }
 nav a.nav-bg:hover { color: #ab0bd4; }
+nav a.nav-media { color: #333; }
+nav a.nav-media:hover { color: #fcff5c; }
 
 .particle {
   position: absolute;
