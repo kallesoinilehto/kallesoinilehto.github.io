@@ -15,6 +15,12 @@ document.addEventListener('mousemove', (e) => {
   mouse.y = e.clientY;
 });
 
+window.addEventListener('resize', () => {
+  vw = window.innerWidth;
+  vh = window.innerHeight;
+  navHeight = nav.offsetHeight;
+});
+
 for (let i = 0; i < particleCount; i++) {
   const p = document.createElement('div');
   p.className = 'particle';
@@ -23,16 +29,21 @@ for (let i = 0; i < particleCount; i++) {
   p.style.height = `${size}px`;
   p.style.background = `hsl(266,0%,39%)`;
   p.style.opacity = rand(0.4, 1);
-  p.style.left = `${rand(0, vw)}px`;
-  p.style.top = `${rand(navHeight, vh)}px`;
+  
+  const left = rand(0, vw);
+  const top = rand(navHeight, vh);
+  p.style.left = `${left}px`;
+  p.style.top = `${top}px`;
 
   const initDx = rand(-0.5, 0.5);
   const initDy = rand(-0.5, 0.5);
-  p.dataset.dx = rand(-0.5, 0.5);
-  p.dataset.dy = rand(-0.5, 0.5);
+  p.dataset.dx = initDx;
+  p.dataset.dy = initDy;
 
   p.dataset.origDx = initDx;
   p.dataset.origDy = initDy;
+  p.dataset.homeX = left;
+  p.dataset.homeY = top;
   
   container.appendChild(p);
 }
@@ -40,9 +51,10 @@ for (let i = 0; i < particleCount; i++) {
 function animateParticles() {
   const particles = document.querySelectorAll('.particle');
   const repelRadius = 80;
-  const repelStrength = 1.2;
-  const returnFactor = 0.06;
-  const maxSpeed = 2;
+  const repelStrength = 1.6;
+  const returnFactor = 0.08;
+  const velocityDecay = 0.92;
+  const maxSpeed = 4;
   
   particles.forEach(p => {
     let left = parseFloat(p.style.left);
@@ -61,27 +73,41 @@ function animateParticles() {
       dx += Math.cos(angle) * repelStrength;
       dy += Math.sin(angle) * repelStrength;
 
+      dx = Math.max(-maxSpeed, Math.min(maxSpeed, dx));
+      dy = Math.max(-maxSpeed, Math.min(maxSpeed, dy));
+
+      left += dx;
+      top += dy;
+
       p.dataset.lastRepel = performance.now();
     } else {
-      const origDx = parseFloat(p.dataset.origDx);
-      const origDy = parseFloat(p.dataset.origDy);
-      dx += (origDx - dx) * returnFactor;
-      dy += (origDy - dy) * returnFactor;
+      const homeX = parseFloat(p.dataset.homeX);
+      const homeY = parseFloat(p.dataset.homeY);
+
+      left += (homeX - left) * positionLerp;
+      top += (homeY - top) * positionLerp;
+
+      dx *= velocityDecay;
+      dy *= velocityDecay;
     }
 
-    dx = Math.max(-maxSpeed, Math.min(maxSpeed, dx));
-    dy = Math.max(-maxSpeed, Math.min(maxSpeed, dy));
+    const particleWidth = parseFloat(p.style.width);
+    const particleHeight = parseFloat(p.style.height);
 
-    left += dx;
-    top += dy;
-
-    if (left < 0 || left > vw) {
+     if (left < 0) {
+      left = 0;
       dx *= -1;
-      left = Math.max(0, Math.min(vw, left));
+    } else if (left + particleWidth > vw) {
+      left = vw - particleWidth;
+      dx *= -1;
     }
-    if (top < navHeight || top > vh) {
+
+    if (top < navHeight) {
+      top = navHeight;
       dy *= -1;
-      top = Math.max(navHeight, Math.min(vh, top));
+    } else if (top + particleHeight > vh) {
+      top = vh - particleHeight;
+      dy *= -1;
     }
 
     p.style.left = `${left}px`;
@@ -89,6 +115,7 @@ function animateParticles() {
     p.dataset.dx = dx;
     p.dataset.dy = dy;
   });
+  
   requestAnimationFrame(animateParticles);
 }
 
