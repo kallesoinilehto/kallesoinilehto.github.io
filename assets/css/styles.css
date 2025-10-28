@@ -76,6 +76,13 @@ nav a.nav-bg:hover { color: #ab0bd4; }
 nav a.nav-media { color: #333; }
 nav a.nav-media:hover { color: #fcff5c; }
 
+#particle-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh);
+  overflow: hidden;
+}
+
 .particle {
   position: absolute;
   border-radius: 50%;
