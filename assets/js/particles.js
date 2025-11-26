@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     p.style.top = `${top}px`;
 
     // CHANGE: give it a small initial random velocity, for gentle floating
-    const initDx = rand(-0.5, 0.5);
-    const initDy = rand(-0.5, 0.5);
+    const initDx = rand(-0.1, 0.1);
+    const initDy = rand(-0.1, 0.1);
     p.dataset.dx = initDx;
     p.dataset.dy = initDy;
     p.dataset.homeX = left;
