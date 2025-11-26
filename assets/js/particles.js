@@ -46,12 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     p.style.left = `${left}px`;
     p.style.top = `${top}px`;
 
+    // CHANGE: give it a small initial random velocity, for gentle floating
     const initDx = rand(-0.5, 0.5);
     const initDy = rand(-0.5, 0.5);
     p.dataset.dx = initDx;
     p.dataset.dy = initDy;
-    p.dataset.origDx = initDx;
-    p.dataset.origDy = initDy;
     p.dataset.homeX = left;
     p.dataset.homeY = top;
 
@@ -61,10 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function animateParticles() {
     const particles = document.querySelectorAll('.particle');
     const repelRadius = 80;
-    const repelStrength = 0.8;
-    const positionLerp = 0.08;
-    const velocityDecay = 1.50;
-    const maxSpeed = 4;
+    const repelStrength = 1.0; // Stronger
+    const homeStrength = 0.02; // Smaller value so it floats slowly toward home
+    const maxSpeed = 2;
 
     particles.forEach(p => {
       let left = parseFloat(p.style.left);
@@ -79,47 +77,59 @@ document.addEventListener('DOMContentLoaded', () => {
       const dist = Math.sqrt(distX * distX + distY * distY);
 
       if (dist < repelRadius) {
+        // Repel with a force based on distance
         const angle = Math.atan2(distY, distX);
-        dx += Math.cos(angle) * repelStrength;
-        dy += Math.sin(angle) * repelStrength;
+        const force = repelStrength * (1 - dist / repelRadius);
+        dx += Math.cos(angle) * force;
+        dy += Math.sin(angle) * force;
 
-        dx = Math.max(-maxSpeed, Math.min(maxSpeed, dx));
-        dy = Math.max(-maxSpeed, Math.min(maxSpeed, dy));
-
-        left += dx;
-        top += dy;
-
-        p.dataset.lastRepel = performance.now();
+        // Clamp speed
+        const speed = Math.sqrt(dx * dx + dy * dy);
+        if (speed > maxSpeed) {
+          dx = (dx / speed) * maxSpeed;
+          dy = (dy / speed) * maxSpeed;
+        }
       } else {
+        // CHANGE: gently steer toward home WITHOUT snapping, don't kill velocity completely
         const homeX = parseFloat(p.dataset.homeX);
         const homeY = parseFloat(p.dataset.homeY);
 
-        left += (homeX - left) * positionLerp;
-        top += (homeY - top) * positionLerp;
+        dx += (homeX - left) * homeStrength;
+        dy += (homeY - top) * homeStrength;
 
-        dx *= velocityDecay;
-        dy *= velocityDecay;
+        // Slow down if moving very fast
+        const speed = Math.sqrt(dx * dx + dy * dy);
+        if (speed > maxSpeed) {
+          dx = (dx / speed) * maxSpeed;
+          dy = (dy / speed) * maxSpeed;
+        }
       }
 
+      // Add velocity to position
+      left += dx;
+      top += dy;
+
+      // Bounce from viewport edges and nav
       const particleWidth = parseFloat(p.style.width);
       const particleHeight = parseFloat(p.style.height);
 
       if (left < 0) {
         left = 0;
-        dx *= -1;
+        dx *= -0.7; // Lose some energy
       } else if (left + particleWidth > vw) {
         left = vw - particleWidth;
-        dx *= -1;
+        dx *= -0.7;
       }
 
       if (top < navHeight) {
         top = navHeight;
-        dy *= -1;
+        dy *= -0.7;
       } else if (top + particleHeight > vh) {
         top = vh - particleHeight;
-        dy *= -1;
+        dy *= -0.7;
       }
 
+      // Write back
       p.style.left = `${left}px`;
       p.style.top = `${top}px`;
       p.dataset.dx = dx;
