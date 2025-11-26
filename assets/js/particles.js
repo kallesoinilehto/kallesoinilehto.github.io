@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function animateParticles() {
     const particles = document.querySelectorAll('.particle');
     const repelRadius = 80;
-    const repelStrength = 1.0; // Stronger
-    const homeStrength = 0.02; // Smaller value so it floats slowly toward home
-    const maxSpeed = 2;
+    const repelStrength = 0.4; // Stronger
+    const homeStrength = 0.008; // Smaller value so it floats slowly toward home
+    const maxSpeed = 1;
 
     particles.forEach(p => {
       let left = parseFloat(p.style.left);
