@@ -52,6 +52,28 @@ nav {
   gap: 50px;
   left: 0;
   right: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease out;
+}
+
+nav visible {
+  transform: translateY(0);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+body {
+  padding-top: 20px;
 }
 
 nav a {
@@ -75,24 +97,6 @@ nav a.nav-bg { color: #333; }
 nav a.nav-bg:hover { color: #ab0bd4; }
 nav a.nav-media { color: #333; }
 nav a.nav-media:hover { color: #fcff5c; }
-
-#particle-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.particle {
-  position: absolute;
-  border-radius: 50%;
-  will-change: transform, opacity;
-  pointer-events: none;
-}
 
 nav, .content {
   position: relative;
