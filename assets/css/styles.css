@@ -47,7 +47,7 @@ nav {
   box-sizing: border-box;
   background-color: #0e0f33;
   padding: 20px;
-  border-bottom: 2px solid #a6a6a4;
+  border-bottom: 2px solid #333;
   display: flex;
   justify-content: center;
   gap: 50px;
