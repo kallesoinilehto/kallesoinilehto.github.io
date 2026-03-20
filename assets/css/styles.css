@@ -17,8 +17,9 @@ html {
 
 body { 
   margin:0;
-  background-color: #edeae6; 
-  color: #333;
+  /*background-color: #edeae6;
+  color: #333;*/
+  background-color: #10064f;
 }
 
 p {
