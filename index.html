@@ -1,2 +1,30 @@
-<script src="assets/js/navbar-hide.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalle Soinilehto</title>
+    <style>
+        #navbar {
+            transition: opacity 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">This is my navbar</div>
+
+    <script>
+        let navbar = document.getElementById('navbar');
+        let hideTimeout;
+
+        document.addEventListener('mousemove', function() {
+            clearTimeout(hideTimeout);
+            navbar.style.opacity = '1'; // Show navbar
+
+            hideTimeout = setTimeout(() => {
+                navbar.style.opacity = '0'; // Hide navbar
+            }, 2000); // Hide after 2 seconds of no movement
+        });
+    </script>
 </body>
+</html>
