@@ -1,11 +1,3 @@
-/*.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}*/
-
 .narrow-text {
   margin-left: 30%;
   margin-right: 30%;
@@ -17,9 +9,7 @@ html {
 
 body { 
   margin:0;
-  /*background-color: #edeae6;
-  color: #333;*/
-  background-color: #1f184f;
+  background-color: white;
 }
 
 p {
@@ -51,7 +41,6 @@ nav {
   box-sizing: border-box;
   background-color: #0e0f33;
   padding: 20px;
-  /*border-bottom: 2px solid #333;*/
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -64,10 +53,6 @@ nav a {
   color: #D0E4E9;
   text-decoration: none;
 }
-
-/*nav a:hover {
-  text-decoration-color: #fcff5c;
-}*/
 
 nav a.nav-home { color: #D0E4E9; }
 nav a.nav-home:hover { color: #0074D9; }
