@@ -3,9 +3,10 @@
   margin-right: 25%;
 }
 
-.not-bold {
-font-weight: normal;
-height: 150px;
+.name-title {
+  font-weight: normal;
+  margin-top: 50 px;
+  text-align: center;
 }
 
 html {
