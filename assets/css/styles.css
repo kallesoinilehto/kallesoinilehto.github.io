@@ -3,6 +3,10 @@
   margin-right: 25%;
 }
 
+.not-bold {
+font-weight: normal
+}
+
 html {
   height:100%;
 }
