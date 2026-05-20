@@ -18,7 +18,7 @@ body {
   background-color: white;
 }
 
-/*Paragraphs are aligned to left and have the same color and font as the headings*/
+/*Paragraphs are aligned to the left and have the same color and font as the headings*/
 p {
   text-align:left;
   font-family:arial;
@@ -42,6 +42,7 @@ h3{
   color: #0e0f33;
 }
 
+/*Navigation link element defined*/
 nav {
   width: 100%;
   box-sizing: border-box;
@@ -59,6 +60,7 @@ nav a {
   text-decoration: none;
 }
 
+/*Navigation link text colors defined with and without hovering*/
 nav a.nav-home { color: #0e0f33; }
 nav a.nav-home:hover { color: #0074D9; }
 nav a.nav-info { color: #0e0f33; }
@@ -69,6 +71,7 @@ nav a.nav-bg { color: #0e0f33; }
 nav a.nav-bg:hover { color: #ab0bd4; }
 nav a.nav-media { color: #0e0f33; }
 nav a.nav-media:hover { color: #ae00ff; }
+
 nav, .content {
   position: relative;
   z-index: 1;
