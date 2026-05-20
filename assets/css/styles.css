@@ -18,6 +18,7 @@ body {
   background-color: white;
 }
 
+/*Paragraphs are aligned to left and have the same color and font as the headings*/
 p {
   text-align:left;
   font-family:arial;
