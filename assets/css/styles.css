@@ -71,6 +71,8 @@ nav a.nav-bg { color: #0e0f33; }
 nav a.nav-bg:hover { color: #ab0bd4; }
 nav a.nav-media { color: #0e0f33; }
 nav a.nav-media:hover { color: #ae00ff; }
+nav a.nav-vr { color: #0e0f33; }
+nav a.nav-vr:hover { color: #d4af37; }
 
 nav, .content {
   position: relative;
